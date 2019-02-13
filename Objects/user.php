@@ -34,6 +34,21 @@ class User
         return $stmt;
     }
 
+    public function userUpdate($id){
+        $query = "UPDATE ".$this->table."
+                  SET name = :name, password = :password
+                  WHERE user_id = :id
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            'name' => $this->name,
+            'password' => $this->password,
+            'id' => $id
+        ]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */
