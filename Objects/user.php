@@ -14,7 +14,7 @@ class User
 
     public function userCreate(){
         $query = "INSERT INTO ".$this->table."
-                  VALUES (0, ?, ?)        
+                  VALUES (0, ?, ?, null)        
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([$this->name, $this->password]);
