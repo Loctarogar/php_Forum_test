@@ -1,5 +1,4 @@
-<?php ?>
-
+<?php  ?>
 <html>
 <head>
     <title>User Update</title>

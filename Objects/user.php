@@ -49,6 +49,19 @@ class User
         return $stmt;
     }
 
+    public function userDelete($id){
+        $query = "UPDATE ".$this->table."
+                  SET deleted_at = NOW()
+                  WHERE user_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            $id
+        ]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */
