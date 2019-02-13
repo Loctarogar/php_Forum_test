@@ -22,9 +22,9 @@ class User
         return $stmt;
     }
 
-    public function getUser($id){
+    public function userRead($id){
         $query = "SELECT * FROM ".$this->table."
-                  WHERE id = :id
+                  WHERE user_id = :id
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([

@@ -7,7 +7,8 @@ include_once '../../Templates/user/userCreate.php';
 $database = new Database();
 $conn = $database->getConnection();
 $user = new User($conn);
-if((isset($_POST['name']) & strlen($_POST['name']) > 5) & (isset($_POST['password']) & strlen($_POST['password'] > 6))){
+
+if(isset($_POST['name']) && strlen($_POST['name']) > 5 && isset($_POST['password']) && strlen($_POST['password']) > 5){
     $userName = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $userPassword = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 }else{

@@ -1,6 +1,4 @@
-<?php
-?>
-
+<?php ?>
 <html>
 <head>
     <title>Create User</title>
