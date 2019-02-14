@@ -39,3 +39,10 @@ FOREIGN KEY (role_id) REFERENCES roles (role_id)
 );
 
 ALTER TABLE users ADD deleted_at DATETIME;
+
+CREATE TABLE topic (
+topic_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+user_id INT UNSIGNED NOT NULL, name VARCHAR(50),
+body TEXT,
+PRIMARY KEY (topic_id),
+FOREIGN KEY (user_id) REFERENCES users (user_id) );
