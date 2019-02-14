@@ -27,6 +27,16 @@ Class Topic
         return $stmt;
     }
 
+    public function topicRead($id){
+        $query = "SELECT * FROM ".$this->table."
+                  WHERE topic_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$id]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */

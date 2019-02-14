@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c15f5-dcbe-43e1-9015-83f3bf2a0369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_schema/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db_schema/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/topic.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,37 +67,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
+        <entry file="file://$PROJECT_DIR$/Objects/topic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="151">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/userCreate.php">
+        <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
-          <provider selected="true" editor-type-id="text-editor">
+        <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Objects/topic.php">
+        <entry file="file://$PROJECT_DIR$/Templates/topic/topicRead.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="135">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -126,6 +125,8 @@
         <option value="$PROJECT_DIR$/Templates/topic/topicCreate.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicCreate.php" />
         <option value="$PROJECT_DIR$/Objects/topic.php" />
+        <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
+        <option value="$PROJECT_DIR$/Templates/topic/topicRead.php" />
       </list>
     </option>
   </component>
@@ -136,9 +137,9 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
+    <option name="x" value="716" />
     <option name="y" value="25" />
-    <option name="width" value="1299" />
+    <option name="width" value="650" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -234,24 +235,24 @@
       <workItem from="1549998554000" duration="3752000" />
       <workItem from="1550045831691" duration="7329000" />
       <workItem from="1550082240154" duration="4718000" />
-      <workItem from="1550153666959" duration="5592000" />
+      <workItem from="1550153666959" duration="7651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21391000" />
+    <option name="totallyTimeSpent" value="23450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1763767" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1763767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39739415" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,12 +260,12 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33441558" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33387622" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.17956904" />
+      <window_info anchor="right" id="Database" order="3" weight="0.17956904" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,14 +295,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Objects/topic.php</url>
-          <line>16</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Objects/topic.php</url>
-          <line>15</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/Controllers/topic/topicRead.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -390,13 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -411,10 +400,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -427,8 +416,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Objects/topic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="151">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
