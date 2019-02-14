@@ -52,6 +52,19 @@ Class Topic
         return $stmt;
     }
 
+    public function topicDelete($id){
+        $query = "UPDATE ".$this->table."
+                  SET deleted_at = NOW()
+                  WHERE topic_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            $id
+        ]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */

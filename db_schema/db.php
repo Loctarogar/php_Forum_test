@@ -46,3 +46,5 @@ user_id INT UNSIGNED NOT NULL, name VARCHAR(50),
 body TEXT,
 PRIMARY KEY (topic_id),
 FOREIGN KEY (user_id) REFERENCES users (user_id) );
+
+ALTER TABLE topic ADD deleted_at DATETIME;
