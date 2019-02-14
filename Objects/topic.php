@@ -37,6 +37,21 @@ Class Topic
         return $stmt;
     }
 
+    public function topicUpdate($id){
+        $query = "UPDATE ".$this->table."
+                  SET name = :topicName, body = :topicBody
+                  WHERE topic_id = :topicId
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            'topicName' => $this->name,
+            'topicBody' => $this->body,
+            'topicId'   => $id
+        ]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */
