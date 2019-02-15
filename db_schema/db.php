@@ -48,3 +48,13 @@ PRIMARY KEY (topic_id),
 FOREIGN KEY (user_id) REFERENCES users (user_id) );
 
 ALTER TABLE topic ADD deleted_at DATETIME;
+
+CREATE TABLE comments (
+comment_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+topic_id INT UNSIGNED NOT NULL,
+body TEXT,
+PRIMARY KEY (comment_id),
+FOREIGN KEY (topic_id) REFERENCES topic (topic_id)
+);
+
+ALTER TABLE comments ADD deleted_at DATETIME;
