@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include_once '../../Templates/user/userLogin.php';
 include_once '../../Core/database.php';
 include_once '../../Objects/user.php';
@@ -15,7 +17,7 @@ $user->setPassword($password);
 $stmt = $user->userLogin();
 $u = $stmt->fetch();
 if($u){
-    print_r($u);
+    $_SESSION['user'] = $u['user_id'];
     echo "You successfully logged in";
 }else{
     echo "An error occurred";
