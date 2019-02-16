@@ -62,6 +62,19 @@ class User
         return $stmt;
     }
 
+    public function userLogin(){
+        $query = "SELECT * FROM ".$this->table."
+                  WHERE name = ? and password = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            $this->name,
+            $this->password
+        ]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */
