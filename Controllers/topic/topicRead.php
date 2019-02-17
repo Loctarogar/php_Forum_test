@@ -3,7 +3,11 @@
 include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
-$id = 5;
+if(isset($_GET['topicId'])){
+    $id = $_GET['topicId'];
+}else{
+    $id = 5;
+}
 
 $database = new Database();
 $conn = $database->getConnection();

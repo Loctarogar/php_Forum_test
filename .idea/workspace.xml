@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c15f5-dcbe-43e1-9015-83f3bf2a0369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/topic/topicRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicRead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,24 +44,6 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/userLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/topic/topicShowAll.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -71,28 +53,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Objects/topic.php">
+        <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/userCreate.php">
+        <entry file="file://$PROJECT_DIR$/Objects/topic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -116,7 +98,6 @@
         <option value="$PROJECT_DIR$/Objects/Topic.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicCreate.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicCreate.php" />
-        <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicRead.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicUpdate.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicUpdate.php" />
@@ -136,12 +117,14 @@
         <option value="$PROJECT_DIR$/Templates/user/userLogin.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userLogin.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/Templates/topic/topicShowAll.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicShowAll.php" />
         <option value="$PROJECT_DIR$/Objects/topic.php" />
+        <option value="$PROJECT_DIR$/Templates/topic/topicShowAll.php" />
+        <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
       </list>
     </option>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="mytest1.com" id="88fe29c2-a5c0-45bb-92c8-042117fe2120" name="mytest1.com" />
@@ -253,18 +236,18 @@
       <workItem from="1550326837313" duration="598000" />
       <workItem from="1550338649328" duration="4193000" />
       <workItem from="1550349377834" duration="6000" />
-      <workItem from="1550427794438" duration="6366000" />
+      <workItem from="1550427794438" duration="7224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42833000" />
+    <option name="totallyTimeSpent" value="43691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16360734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16360734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -283,7 +266,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.17956904" />
+      <window_info anchor="right" id="Database" order="3" weight="0.17956904" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +297,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Controllers/topic/topicRead.php</url>
-          <line>10</line>
+          <line>14</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -336,6 +319,11 @@
           <url>file://$PROJECT_DIR$/Controllers/comment/commentUpdate.php</url>
           <line>13</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Controllers/topic/topicRead.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -396,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -414,13 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -564,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Objects/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -578,17 +545,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
+    <entry file="file://$PROJECT_DIR$/Objects/topic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicShowAll.php">
+    <entry file="file://$PROJECT_DIR$/Core/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="46">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -599,10 +566,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/topic.php">
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicShowAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
