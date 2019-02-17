@@ -65,6 +65,17 @@ Class Topic
         return $stmt;
     }
 
+    public function topicShowAll(){
+        $query = "SELECT * FROM ".$this->table."
+                  WHERE deleted_at IS NULL
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+
+        return $stmt;
+
+    }
+
     /**
      * @param mixed $name
      */
