@@ -5,6 +5,7 @@
     <title>Show All Topics</title>
 </head>
 <body>
+<h2><?php echo $_SESSION['user']; ?></h2>
 <?php foreach ($topics as $topic){ ?><br>
     <a  href="../../Controllers/topic/topicRead.php?topicId=<?php echo $topic['topic_id'] ?>"><?php echo $topic['name']; ?></a>
 <?php } ?>
