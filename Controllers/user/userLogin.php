@@ -20,7 +20,6 @@ $stmt = $user->userLogin();
 $u = $stmt->fetch();
 if($u){
     $_SESSION['user'] = $u['user_id'];
-    echo "You successfully logged in";
 }else{
     echo "An error occurred";
 }

@@ -4,7 +4,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>White Edition</title>
+    <title>Main page</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
 </head>
@@ -45,8 +45,9 @@
         <?php } ?>
     </div>
     <?php } ?>
-    <footer>
-<div class="copyright"><small>Made by Loctarogar.</small></div>
+</section>
+<footer>
+    <div class="copyright"><small>Made by Loctarogar.</small></div>
 </footer>
 </body>
 </html>

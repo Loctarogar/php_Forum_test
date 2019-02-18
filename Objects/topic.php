@@ -15,7 +15,7 @@ Class Topic
 
     public function topicCreate(){
         $query = "INSERT INTO ".$this->table."
-                  VALUES (0, ?, ?, ?)
+                  VALUES (0, ?, ?, ?, null)
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([
