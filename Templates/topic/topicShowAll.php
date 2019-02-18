@@ -1,17 +1,4 @@
 <?php
-/**
-<html>
-<head>
-    <title>Show All Topics</title>
-</head>
-<body>
-<h2><?php echo $_SESSION['user']; ?></h2>
-<?php foreach ($topics as $topic){ ?><br>
-    <a  href="../../Controllers/topic/topicRead.php?topicId=<?php echo $topic['topic_id'] ?>"><?php echo $topic['name']; ?></a>
-<?php } ?>
-</body>
-</html>
-*/
 ?>
 
 <!DOCTYPE HTML>
@@ -27,9 +14,14 @@
         <ul>
             <li>
                 <ul>
-                    <li><a href="index.html" class="active">about</a></li>
-                    <li><a href="projets.html">works</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../../Controllers/topic/topicShowAll.php" class="active">Main page</a></li>
+                    <li><a href="">works</a></li>
+                    <?php if(isset($_SESSION['user'])){ ?>
+                        <li><a href="#">Personal cabinet</a></li>
+                        <li><a href="../../Controllers/user/userLogout.php">Logout</a></li>
+                    <?php }else{ ?>
+                        <li><a href="../../Controllers/user/userLogin.php">Login</a></li>
+                    <?php } ?>
                 </ul>
             </li>
         </ul>
