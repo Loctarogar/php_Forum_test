@@ -58,3 +58,7 @@ FOREIGN KEY (topic_id) REFERENCES topic (topic_id)
 );
 
 ALTER TABLE comments ADD deleted_at DATETIME;
+
+ALTER TABLE topic MODIFY name VARCHAR(50) NOT NULL;
+
+ALTER TABLE topic MODIFY body TEXT NOT NULL;

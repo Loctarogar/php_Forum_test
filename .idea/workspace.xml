@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c15f5-dcbe-43e1-9015-83f3bf2a0369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Controllers/user/userLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/topic/topicCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicCreate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/user/userLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/user/userLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_schema/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db_schema/db.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="457">
@@ -103,6 +99,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db_schema/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -126,7 +131,6 @@
         <option value="$PROJECT_DIR$/Controllers/topic/topicUpdate.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicDelete.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicDelete.php" />
-        <option value="$PROJECT_DIR$/db_schema/db.php" />
         <option value="$PROJECT_DIR$/Controllers/comment/commentCreate.php" />
         <option value="$PROJECT_DIR$/Templates/comment/commentCreate.php" />
         <option value="$PROJECT_DIR$/Templates/comment/commentRead.php" />
@@ -147,6 +151,7 @@
         <option value="$PROJECT_DIR$/Templates/user/userLogin.php" />
         <option value="$PROJECT_DIR$/Objects/topic.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicCreate.php" />
+        <option value="$PROJECT_DIR$/db_schema/db.php" />
       </list>
     </option>
   </component>
@@ -156,10 +161,10 @@
       <server host="mytest1.com" id="88fe29c2-a5c0-45bb-92c8-042117fe2120" name="mytest1.com" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="716" />
-    <option name="y" value="88" />
-    <option name="width" value="1299" />
+    <option name="y" value="25" />
+    <option name="width" value="650" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -188,6 +193,11 @@
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
+              <item name="db_schema" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
@@ -258,18 +268,18 @@
       <workItem from="1550349377834" duration="6000" />
       <workItem from="1550427794438" duration="8114000" />
       <workItem from="1550480373776" duration="6994000" />
-      <workItem from="1550500611730" duration="10952000" />
+      <workItem from="1550500611730" duration="11298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62527000" />
+    <option name="totallyTimeSpent" value="62873000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="716" y="25" width="650" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18834797" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18708609" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_schema/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/comment/commentRead.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -611,17 +614,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Objects/topic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -632,10 +635,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicCreate.php">
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_schema/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="487">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
