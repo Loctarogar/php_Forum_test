@@ -73,7 +73,18 @@ Class Topic
         $stmt->execute();
 
         return $stmt;
+    }
 
+    public function topicAllForUser($userId){
+        $query = "SELECT * FROM ".$this->table."
+                  WHERE user_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            $userId
+        ]);
+
+        return $stmt;
     }
 
     /**

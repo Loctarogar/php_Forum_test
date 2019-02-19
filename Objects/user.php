@@ -24,7 +24,7 @@ class User
 
     public function userRead($id){
         $query = "SELECT * FROM ".$this->table."
-                  WHERE user_id = :id
+                  WHERE user_id = :id and deleted_at IS NULL
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([

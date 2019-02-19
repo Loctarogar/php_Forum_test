@@ -31,7 +31,7 @@
     </div>
     <div class="columns">
         <p><?php echo $topic['body']; ?></p>
-        <p><?php echo $user['name']; ?></p>
+        <p><a href="../../Controllers/user/userRead.php?userId=<?php echo $user['user_id']; ?>"><?php echo $user['name']; ?></a></p>
     </div>
     </div>
 </section>
