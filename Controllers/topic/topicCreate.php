@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include_once '../../Objects/topic.php';
 include_once '../../Core/database.php';
 include_once '../../Templates/topic/topicCreate.php';

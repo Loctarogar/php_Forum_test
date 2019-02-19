@@ -1,5 +1,5 @@
-<?php ?>
-
+<?php
+/**
 <html>
 <head>
     <title>
@@ -12,3 +12,6 @@
 <h3><?php echo($user['user_id']); ?></h3>
 </body>
 </html>
+*/
+?>
+

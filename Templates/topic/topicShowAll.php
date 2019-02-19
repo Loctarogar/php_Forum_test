@@ -28,7 +28,7 @@
     </nav>
 </header>
 <section id="video" class="home">
-    <h1>Enjoy our forum</h1>
+    <h1>Enjoy our forum <?php echo $_SESSION['user']; ?></h1>
 </section>
 <section id="main-content">
     <div class="text-intro">

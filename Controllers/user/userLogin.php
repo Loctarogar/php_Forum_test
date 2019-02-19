@@ -19,7 +19,8 @@ $user->setPassword($password);
 $stmt = $user->userLogin();
 $u = $stmt->fetch();
 if($u){
-    $_SESSION['user'] = $u['user_id'];
+    $_SESSION['user'] = $u['name'];
+    $_SESSION['userId'] = $u['user_id'];
 }else{
     echo "An error occurred";
 }
