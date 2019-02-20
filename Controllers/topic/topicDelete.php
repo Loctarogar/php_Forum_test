@@ -5,19 +5,21 @@ session_start();
 include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
-if(!isset($_GET['topicId'])) {
-    include_once '../../Templates/topic/topicDelete.php';
-}else{
+if(isset($_GET['topicId'])){
     $topicId = $_GET['topicId'];
     $database = new Database();
     $conn = $database->getConnection();
     $topic = new Topic($conn);
     $stmt = $topic->topicDelete($topicId);
     $stmt = $stmt->rowCount();
+    unset($_GET['topicId']);
     if(0 < $stmt){
-        echo "Topic was deleted";
+        $message = "Topic was successfully deleted";
     }else{
-        echo "An error occurred";
+        $message = "En error occurred";
     }
+}else{
+    $message = "Topic wasn't found";
 }
 
+include_once '../../Templates/topic/topicDelete.php';
