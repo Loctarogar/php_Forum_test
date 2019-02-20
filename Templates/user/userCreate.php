@@ -25,7 +25,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>White Edition | Contact</title>
+    <title>User Create</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
 </head>
