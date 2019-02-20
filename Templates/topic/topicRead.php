@@ -32,6 +32,7 @@
     <div class="columns">
         <p><?php echo $topic['body']; ?></p>
         <p><a href="../../Controllers/user/userRead.php?userId=<?php echo $user['user_id']; ?>"><?php echo $user['name']; ?></a></p>
+        <p><a href="../../Controllers/topic/topicUpdate.php?topicId=<?php echo $topic['topic_id']; ?>">Update</a></p>
         <p><a href="../../Templates/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
     </div>
     </div>
