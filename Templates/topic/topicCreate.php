@@ -33,7 +33,6 @@
         <h2>Input topic's name and add something to topic's body</h2>
     </div>
     <div class="columns features">
-
         <form method="post" action="../../Controllers/topic/topicCreate.php" id="contact-form">
             Enter topic's name: <br>
             <input type="text" name="name" style="width: 300px"><br>
@@ -43,7 +42,6 @@
             <br>
             <input class="btn btn-input" id="sendMessage" name="sendMessage" type="submit" value="IM DONE">
         </form>
-
     </div>
 </section>
 <?php }else{?>
