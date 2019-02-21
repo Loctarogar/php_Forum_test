@@ -41,6 +41,7 @@
             <input type="text" name="body"> <br>
             <input type="hidden" name="link" value="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']; ?>">
             <input type="hidden" name="topic" value="<?php echo $topic['topic_id']; ?>">
+            <input type="hidden" name="userId" value="<?php echo $_SESSION['userId']; ?>">
             <input type="submit">
              </form>
         <?php } ?>

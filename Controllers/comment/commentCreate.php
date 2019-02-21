@@ -9,10 +9,12 @@ $conn = $database->getConnection();
 $comment = new Comment($conn);
 
 $linc = $_POST['link'];
+$userId = $_POST['userId'];
 $topicId = $_POST['topic'];
 $body = $_POST['body'];
 $comment->setTopic($topicId);
 $comment->setBody($body);
+$comment->setUserId($userId);
 $stmt = $comment->commentCreate();
 if($stmt->rowCount() > 0){
     echo "Comment was created successfully";

@@ -6,6 +6,7 @@ class Comment
     protected $table = "comments";
     protected $topic;
     protected $body;
+    protected $userId;
 
     public function __construct($db)
     {
@@ -14,12 +15,13 @@ class Comment
 
     public function commentCreate(){
         $query = "INSERT INTO ".$this->table."
-                  VALUES (0, ?, ?, NULL)
+                  VALUES (0, ?, ?, NULL, ?)
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([
             $this->topic,
-            $this->body
+            $this->body,
+            $this->userId
         ]);
 
         return $stmt;
@@ -78,6 +80,14 @@ class Comment
     }
 
     /**
+     * @param mixed $userId
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+    }
+
+    /**
      * @return mixed
      */
     public function getTopic()
@@ -91,5 +101,13 @@ class Comment
     public function getBody()
     {
         return $this->body;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->userId;
     }
 }
