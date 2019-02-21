@@ -1,24 +1,4 @@
 <?php
-
-/**
-<html>
-<head>
-    <title>User Update</title>
-</head>
-<body>
-<form name="userUpdate" method="post" action="../../Controllers/user/userUpdate.php">
-    Enter new User's name: <br>
-    <input type="text" name="name"><br>
-    Enter new User's password: <br>
-    <input type="text" name="password"><br>
-    Repeat password: <br>
-    <input type="text" name="passwordRepeat"><br>
-    <input type="submit">
-</form>
-</body>
-</html>
-
-*/
 ?>
 
 <!DOCTYPE HTML>
@@ -37,7 +17,7 @@
                     <li><a href="../../Controllers/topic/topicShowAll.php">Main page</a></li>
                     <li><a href="">works</a></li>
                     <?php if(isset($_SESSION['user'])){ ?>
-                        <li><a href="#">Personal cabinet</a></li>
+                        <li><a href="#"><?php echo $_SESSION['user']; ?>'s Personal cabinet</a></li>
                         <li><a href="../../Controllers/user/userLogout.php">Logout</a></li>
                     <?php }else{ ?>
                         <li><a href="../../Controllers/user/userLogin.php" class="active">Login</a></li>

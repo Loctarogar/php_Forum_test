@@ -14,10 +14,11 @@ if(isset($_GET['topicId'])){
 $database = new Database();
 $conn = $database->getConnection();
 $topic = new Topic($conn);
+$stmtComments = $topic->topicGetComments($id);
+$comments = $stmtComments->fetchAll();
+$user = new User($conn);
 $stmtTopic = $topic->topicRead($id);
 $topic = $stmtTopic->fetch();
-
-$user = new User($conn);
 $stmtUser = $user->userRead($topic['user_id']);
 $user = $stmtUser->fetch();
 

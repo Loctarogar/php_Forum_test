@@ -2,13 +2,14 @@
 
 include_once '../../Objects/comment.php';
 include_once '../../Core/database.php';
-include_once '../../Templates/comment/commentCreate.php';
+//include_once '../../Templates/comment/commentCreate.php';
 
 $database = new Database();
 $conn = $database->getConnection();
 $comment = new Comment($conn);
 
-$topicId = 5;
+$linc = $_POST['link'];
+$topicId = $_POST['topic'];
 $body = $_POST['body'];
 $comment->setTopic($topicId);
 $comment->setBody($body);
@@ -18,3 +19,4 @@ if($stmt->rowCount() > 0){
 }else{
     echo "An error occur";
 }
+header('Location: '.$linc.'?topicId='.$topicId);

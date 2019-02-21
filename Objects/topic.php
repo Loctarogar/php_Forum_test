@@ -27,12 +27,30 @@ Class Topic
         return $stmt;
     }
 
-    public function topicRead($id){
+    public function topicRead($topicId){
+        /**
+        $query = "SELECT topic.name, topic.body as t_body, comments.body as c_body
+                  FROM ".$this->table."
+                  LEFT JOIN comments
+                  ON comments.topic_id = topic.topic_id
+                  WHERE topic.topic_id = ?
+                  ";
+         */
         $query = "SELECT * FROM ".$this->table."
                   WHERE topic_id = ?
         ";
         $stmt = $this->db->prepare($query);
-        $stmt->execute([$id]);
+        $stmt->execute([$topicId]);
+
+        return $stmt;
+    }
+
+    public function topicGetComments($topicId){
+        $query = "SELECT * FROM comments
+                  WHERE topic_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$topicId]);
 
         return $stmt;
     }

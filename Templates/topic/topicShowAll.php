@@ -17,7 +17,7 @@
                     <li><a href="../../Controllers/topic/topicShowAll.php" class="active">Main page</a></li>
                     <li><a href="">works</a></li>
                     <?php if(isset($_SESSION['user'])){ ?>
-                        <li><a href="#">Personal cabinet</a></li>
+                        <li><a href="#"><?php echo $_SESSION['user']; ?>'s Personal cabinet</a></li>
                         <li><a href="../../Controllers/user/userLogout.php">Logout</a></li>
                     <?php }else{ ?>
                         <li><a href="../../Controllers/user/userLogin.php">Login</a></li>
