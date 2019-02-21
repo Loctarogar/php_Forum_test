@@ -35,6 +35,9 @@
         <p><a href="../../Controllers/topic/topicUpdate.php?topicId=<?php echo $topic['topic_id']; ?>">Update</a>  or
         <a href="../../Templates/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
         <p>Comment section: </p>
+        <?php if (isset($message)) {?>
+        <p><?php echo $message; ?></p>
+        <?php } ?>
         <?php if(isset($_SESSION['user'])){ ?>
             <form action="../../Controllers/comment/commentCreate.php" method="post">
             Enter your comment : <br>
