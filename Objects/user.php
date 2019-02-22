@@ -86,6 +86,15 @@ class User
         return $stmt;
     }
 
+    public function userShowAll(){
+        $query = "SELECT * FROM ".$this->table."
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */

@@ -1,24 +1,31 @@
 <?php session_start(); ?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 
 <?php if(!isset($_SESSION['user'])){ ?>
     <p>The page doesn't exist</p>
 <?php }else{ ?>
 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin: Dashboard</title>
+    <title>Admin: User Management</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="../../public/assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
     <link href="../../public/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- MORRIS CHART STYLES-->
+
     <!-- CUSTOM STYLES-->
     <link href="../../public/assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- TABLE STYLES-->
+    <link href="../../public/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
 </head>
+
+
+
 <body>
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
@@ -29,12 +36,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../Controllers/user/userRead.php?userId=<?php echo $_SESSION['userId']; ?>"><?php echo $_SESSION['user']; ?></a>
+            <a  class="navbar-brand" href="../../Controllers/user/userRead.php?userId=<?php echo $_SESSION['userId']; ?>"><?php echo $_SESSION['user']; ?></a>
         </div>
         <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a href="../../Controllers/user/userLogout.php" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> Last access : <?php echo $currentUser['last_access']; ?> &nbsp; <a href="../../Controllers/user/userLogout.php" class="btn btn-danger square-btn-adjust">Logout</a> </div>
     </nav>
     <!-- /. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
@@ -46,10 +53,10 @@ font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a h
 
 
                 <li>
-                    <a class="active-menu" href="../../Controllers/admin/dashboard.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    <a  href="../../Controllers/admin/dashboard.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a  href="../../Controllers/admin/userManagement.php"><i class="fa fa-desktop fa-3x"></i>User management</a>
+                    <a class="active-menu" href="../../Controllers/admin/userManagement.php"><i class="fa fa-desktop fa-3x"></i>User management</a>
                 </li>
                 <li>
                     <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
@@ -58,7 +65,7 @@ font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a h
                     <a  href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i> Morris Charts</a>
                 </li>
                 <li  >
-                    <a  href="table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>
+                    <a   href="table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>
                 </li>
                 <li  >
                     <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
@@ -105,19 +112,57 @@ font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a h
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Blank Page</h2>
-                    <h5>Welcome <?php echo $_SESSION['user']; ?> , Love to see you back. </h5>
+                    <h2>Users</h2>
 
                 </div>
             </div>
             <!-- /. ROW  -->
             <hr />
 
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            User table
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                    <tr>
+                                        <th>N#</th>
+                                        <th>User Id</th>
+                                        <th>User Name</th>
+                                        <th>Last Access</th>
+                                        <th>Deleted At</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php $i = 1; foreach ($users as $user){ ?>
+                                        <tr class="odd gradeX">
+                                            <td><?php echo $i; $i ++; ?></td>
+                                            <td><?php echo $user['user_id']; ?></td>
+                                            <td><?php echo $user['name'] ?></td>
+                                            <td class="center"><?php echo $user['last_access']; ?></td>
+                                            <td><?php echo $user['deleted_at']; ?></td>
+                                        </tr>
+                                    <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+            <!-- /. ROW  -->
         </div>
-        <!-- /. PAGE INNER  -->
     </div>
-    <!-- /. PAGE WRAPPER  -->
+    <!-- /. PAGE INNER  -->
 </div>
+<!-- /. PAGE WRAPPER  -->
 <!-- /. WRAPPER  -->
 <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 <!-- JQUERY SCRIPTS -->
@@ -126,6 +171,14 @@ font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a h
 <script src="../../public/assets/js/bootstrap.min.js"></script>
 <!-- METISMENU SCRIPTS -->
 <script src="../../public/assets/js/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="../../public/assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="../../public/assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
 <!-- CUSTOM SCRIPTS -->
 <script src="../../public/assets/js/custom.js"></script>
 
