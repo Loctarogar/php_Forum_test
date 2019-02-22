@@ -63,6 +63,14 @@ class Comment
 
     }
 
+    public function commentShowALl(){
+        $query = "SELECT * FROM ".$this->table;
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $topic
      */

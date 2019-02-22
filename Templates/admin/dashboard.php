@@ -49,7 +49,18 @@ font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a h
                     <a class="active-menu" href="../../Controllers/admin/dashboard.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a  href="../../Controllers/admin/userManagement.php"><i class="fa fa-desktop fa-3x"></i>User management</a>
+                    <a href="../../Controllers/admin/userManagement.php"><i class="fa fa-desktop fa-3x"></i>User, Topic, Comment<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../../Controllers/admin/userManagement.php">User management</a>
+                        </li>
+                        <li>
+                            <a href="../../Controllers/admin/topicManagement.php">Topic management</a>
+                        </li>
+                        <li>
+                            <a href="../../Controllers/admin/commentManagement.php">Comment management</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
