@@ -70,3 +70,5 @@ ALTER TABLE users MODIFY password VARCHAR(100) NOT NULL;
 ALTER TABLE comments ADD user_id INT UNSIGNED NOT NULL;
 
 ALTER TABLE comments ADD FOREIGN KEY (user_id) REFERENCES users (user_id);
+
+ALTER TABLE users ADD last_access TIMESTAMP;

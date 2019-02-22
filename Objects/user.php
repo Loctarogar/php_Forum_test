@@ -75,6 +75,17 @@ class User
         return $stmt;
     }
 
+    public function userLogout($userId){
+        $query = "UPDATE ".$this->table."
+                  SET last_access = NOW()
+                  WHERE user_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$userId]);
+
+        return $stmt;
+    }
+
     /**
      * @param mixed $name
      */

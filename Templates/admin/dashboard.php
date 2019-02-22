@@ -1,5 +1,11 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
+<?php if(!isset($_SESSION['user'])){ ?>
+    <p>The page doesn't exist</p>
+<?php }else{ ?>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,12 +29,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Binary admin</a>
+            <a class="navbar-brand" href="../../Controllers/user/userRead.php?userId=<?php echo $_SESSION['userId']; ?>"><?php echo $_SESSION['user']; ?></a>
         </div>
         <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> Last access : <?php echo $user['last_access']; ?> &nbsp; <a href="../../Controllers/user/userLogout.php" class="btn btn-danger square-btn-adjust">Logout</a> </div>
     </nav>
     <!-- /. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
@@ -100,7 +106,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div class="row">
                 <div class="col-md-12">
                     <h2>Blank Page</h2>
-                    <h5>Welcome Jhon Deo , Love to see you back. </h5>
+                    <h5>Welcome <?php echo $_SESSION['user']; ?> , Love to see you back. </h5>
 
                 </div>
             </div>
@@ -126,3 +132,5 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 
 </body>
 </html>
+
+<?php } ?>
