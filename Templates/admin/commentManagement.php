@@ -123,7 +123,7 @@ font-size: 16px;"> Last access : <?php echo $currentUser['last_access']; ?> &nbs
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Topics</h2>
+                        <h2>Comments</h2>
 
                     </div>
                 </div>
@@ -135,7 +135,7 @@ font-size: 16px;"> Last access : <?php echo $currentUser['last_access']; ?> &nbs
                         <!-- Advanced Tables -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Topic table
+                                Comment table
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
