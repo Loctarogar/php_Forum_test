@@ -95,6 +95,33 @@ class User
         return $stmt;
     }
 
+    public function userHasRole($userId){
+        $query = "SELECT * FROM user_role
+                  WHERE user_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$userId]);
+        $stmt = $stmt->fetch();
+
+        return $stmt['role_id'];
+    }
+
+    public function userHasPermission($userId, $permission){
+        $role = $this->userHasRole($userId);
+        $query = "SELECT * FROM role_perm
+                  WHERE role_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$role]);
+        $stmt = $stmt->fetchAll();
+        foreach ($stmt as $perm){
+            if($perm['perm_id'] === $permission)
+                return true;
+        }
+
+        return false;
+    }
+
     /**
      * @param mixed $name
      */
