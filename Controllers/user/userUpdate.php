@@ -21,4 +21,6 @@ if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['passwordR
     $message = "User was updated";
 }
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/user/userUpdate.php';
+include_once '../../Templates/layouts/footer.php';

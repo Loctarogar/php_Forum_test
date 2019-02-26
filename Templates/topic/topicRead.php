@@ -33,7 +33,7 @@
         <p><?php echo $topic['body']; ?></p>
         <p>Author : <a href="../../Controllers/user/userRead.php?userId=<?php echo $user['user_id']; ?>"><?php echo $user['name']; ?></a></p>
         <p><a href="../../Controllers/topic/topicUpdate.php?topicId=<?php echo $topic['topic_id']; ?>">Update</a>  or
-        <a href="../../Templates/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
+        <a href="../../Controllers/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
         <p>Comment section: </p>
         <?php if (isset($message)) {?>
         <p><?php echo $message; ?></p>

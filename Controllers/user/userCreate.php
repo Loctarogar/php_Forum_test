@@ -25,4 +25,6 @@ if(isset($_POST['name']) && strlen($_POST['name']) > 5
     $message = "Please provide valid name and password";
 }
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/user/userCreate.php';
+include_once '../../Templates/layouts/footer.php';

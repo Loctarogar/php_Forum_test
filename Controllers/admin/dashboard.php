@@ -12,7 +12,9 @@ $database = new Database();
 $conn = $database->getConnection();
 $user = new User($conn);
 $stmt = $user->userRead($userId);
+$userPermission = $user->userHasPermission($userId, 4);
 $user = $stmt->fetch();
+
 $topic = new Topic($conn);
 $stmt = $topic->topicAllForUser($userId);
 $topics = $stmt->fetchAll();

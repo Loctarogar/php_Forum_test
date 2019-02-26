@@ -5,7 +5,9 @@ session_start();
 include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
-if(isset($_GET['topicId'])){
+$pageTitle = "Topic Delete";
+
+if(isset($_GET['topicId']) && isset($_GET['delete'])){
     $topicId = $_GET['topicId'];
     $database = new Database();
     $conn = $database->getConnection();
@@ -22,4 +24,6 @@ if(isset($_GET['topicId'])){
     $message = "Topic wasn't found";
 }
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/topic/topicDelete.php';
+include_once '../../Templates/layouts/footer.php';

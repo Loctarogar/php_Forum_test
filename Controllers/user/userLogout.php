@@ -19,5 +19,7 @@ if(isset($_GET['logout'])){
 }
 
 if(isset($_SESSION['user'])){
+    include_once '../../Templates/layouts/header.php';
     include_once '../../Templates/user/userLogout.php';
+    include_once '../../Templates/layouts/footer.php';
 }

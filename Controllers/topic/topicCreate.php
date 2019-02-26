@@ -4,8 +4,11 @@ session_start();
 
 include_once '../../Objects/topic.php';
 include_once '../../Core/database.php';
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/topic/topicCreate.php';
+include_once '../../Templates/layouts/footer.php';
 
+$pageTitle = "Topic Create";
 $userId = 6;
 $topicName = $_POST['name'];
 $topicBody = $_POST['body'];

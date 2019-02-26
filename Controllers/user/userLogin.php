@@ -4,7 +4,9 @@ session_start([
     'cookie_lifetime' => 86400,
 ]);
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/user/userLogin.php';
+include_once '../../Templates/layouts/footer.php';
 include_once '../../Core/database.php';
 include_once '../../Objects/user.php';
 

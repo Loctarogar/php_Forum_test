@@ -6,6 +6,7 @@ include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
 $topicId = $_GET['topicId'];
+$pageTitle = "Topic Update";
 
 $database = new Database();
 $conn = $database->getConnection();
@@ -24,4 +25,6 @@ if(isset($_POST['name']) && isset($_POST['body'])){
     $topic = $topic->topicRead($topicId)->fetch();
 }
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/topic/topicUpdate.php';
+include_once '../../Templates/layouts/footer.php';

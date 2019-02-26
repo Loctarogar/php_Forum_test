@@ -2,10 +2,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<?php if(!isset($_SESSION['user'])){ ?>
-    <p>The page doesn't exist</p>
+<?php if(false == $userPermission){ ?>
+    <p>The page doesn't exists</p>
 <?php }else{ ?>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

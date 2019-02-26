@@ -8,6 +8,7 @@ include_once '../../Objects/topic.php';
 $topics = [];
 $counter = 0;
 $arrayCounter = 0;
+$pageTitle = "Main Page";
 
 $database = new Database();
 $conn = $database->getConnection();
@@ -23,4 +24,6 @@ while($row = $stmt->fetch()){
     }
 }
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/topic/topicShowAll.php';
+include_once '../../Templates/layouts/footer.php';

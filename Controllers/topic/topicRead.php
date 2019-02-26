@@ -5,6 +5,7 @@ include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 include_once '../../Objects/user.php';
 
+$pageTitle = "Topic Read";
 if(isset($_GET['topicId'])){
     $id = $_GET['topicId'];
 }else{
