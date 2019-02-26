@@ -5,6 +5,7 @@ session_start();
 include_once '../../Objects/user.php';
 include_once '../../Core/database.php';
 
+$pageTitle = "User Delete";
 if(isset($_GET['userId']) && isset($_GET['delete'])){
     $userId = $_GET['userId'];
     $database = new Database();

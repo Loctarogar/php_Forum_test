@@ -1,4 +1,3 @@
-
 <section id="home-head" class="work">
     <h1>Here you can delete topic.</h1>
 </section>

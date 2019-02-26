@@ -5,6 +5,7 @@ include_once '../../Objects/user.php';
 include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
+$pageTitle = "User Read";
 if(isset($_GET['userId'])){
     $id = filter_var($_GET['userId'], FILTER_VALIDATE_INT);
     $database = new Database();

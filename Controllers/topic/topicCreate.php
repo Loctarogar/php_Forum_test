@@ -9,7 +9,7 @@ include_once '../../Templates/topic/topicCreate.php';
 include_once '../../Templates/layouts/footer.php';
 
 $pageTitle = "Topic Create";
-$userId = 6;
+$userId = $_SESSION['userId'];
 $topicName = $_POST['name'];
 $topicBody = $_POST['body'];
 

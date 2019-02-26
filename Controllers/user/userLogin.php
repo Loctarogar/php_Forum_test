@@ -12,6 +12,7 @@ include_once '../../Objects/user.php';
 
 $username = $_POST['name'];
 $password = $_POST['password'];
+$pageTitle = "User Login";
 
 $database = new Database();
 $conn = $database->getConnection();

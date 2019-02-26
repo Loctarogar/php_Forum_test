@@ -3,26 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="7a2c15f5-dcbe-43e1-9015-83f3bf2a0369" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/admin/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/comment/commentDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/comment/commentDelete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/comment/commentRead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/topic/topicCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicCreate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/topic/topicDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicDelete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/topic/topicRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicRead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/topic/topicShowAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicShowAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/topic/topicUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicUpdate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/user/userCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userCreate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/user/userDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userDelete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/user/userLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/userLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userLogout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/user/userRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userRead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/topic/topicCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicCreate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/userUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user/userUpdate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/comment/commentDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/comment/commentDelete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/comment/commentRead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/comment/commentUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/comment/commentUpdate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/topic/topicDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicDelete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/topic/topicRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicRead.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicShowAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/topic/topicUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/topic/topicUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/user/userCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/user/userCreate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/user/userDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/user/userDelete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/user/userLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/user/userLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/user/userRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/user/userRead.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,35 +58,64 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/userDelete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/user/userDelete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Controllers/comment/commentUpdate.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Templates/topic/topicRead.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="413">
+                  <caret line="35" column="100" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Templates/comment/commentUpdate.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#section#1;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Templates/topic/topicUpdate.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret lean-forward="true" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Templates/comment/commentUpdate.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -103,17 +129,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Controllers/comment/commentRead.php" />
-        <option value="$PROJECT_DIR$/Templates/comment/commentUpdate.php" />
-        <option value="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" />
-        <option value="$PROJECT_DIR$/Templates/comment/commentDelete.php" />
-        <option value="$PROJECT_DIR$/Controllers/comment/commentDelete.php" />
-        <option value="$PROJECT_DIR$/Controllers/user/userUpdate.php" />
         <option value="$PROJECT_DIR$/Objects/topic.php" />
-        <option value="$PROJECT_DIR$/Templates/user/userUpdate.php" />
-        <option value="$PROJECT_DIR$/Templates/user/userLogout.php" />
         <option value="$PROJECT_DIR$/Controllers/comment/commentCreate.php" />
         <option value="$PROJECT_DIR$/db_schema/db.php" />
-        <option value="$PROJECT_DIR$/Controllers/user/userLogout.php" />
         <option value="$PROJECT_DIR$/Controllers/admin/userManagement.php" />
         <option value="$PROJECT_DIR$/Controllers/admin/topicManagement.php" />
         <option value="$PROJECT_DIR$/Controllers/admin/commentManagement.php" />
@@ -132,27 +150,35 @@
         <option value="$PROJECT_DIR$/Controllers/user/userHasPermission.php" />
         <option value="$PROJECT_DIR$/Controllers/admin/dashboard.php" />
         <option value="$PROJECT_DIR$/Templates/admin/dashboard.php" />
-        <option value="$PROJECT_DIR$/Templates/topic/topicShowAll.php" />
         <option value="$PROJECT_DIR$/Templates/layouts/footer.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicUpdate.php" />
         <option value="$PROJECT_DIR$/Templates/topic/topicCreate.php" />
-        <option value="$PROJECT_DIR$/Templates/topic/topicRead.php" />
-        <option value="$PROJECT_DIR$/Templates/topic/topicDelete.php" />
-        <option value="$PROJECT_DIR$/Controllers/topic/topicCreate.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicDelete.php" />
-        <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicShowAll.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicUpdate.php" />
-        <option value="$PROJECT_DIR$/Controllers/user/userRead.php" />
-        <option value="$PROJECT_DIR$/Controllers/user/userCreate.php" />
         <option value="$PROJECT_DIR$/Templates/layouts/header.php" />
         <option value="$PROJECT_DIR$/Templates/user/userLogin.php" />
-        <option value="$PROJECT_DIR$/Controllers/user/userLogin.php" />
         <option value="$PROJECT_DIR$/Templates/user/userCreate.php" />
         <option value="$PROJECT_DIR$/Templates/user/userRead.php" />
         <option value="$PROJECT_DIR$/Templates/user/userDelete.php" />
+        <option value="$PROJECT_DIR$/Templates/user/userLogout.php" />
+        <option value="$PROJECT_DIR$/Templates/user/userUpdate.php" />
+        <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
+        <option value="$PROJECT_DIR$/Templates/topic/topicShowAll.php" />
+        <option value="$PROJECT_DIR$/Controllers/user/userCreate.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userDelete.php" />
+        <option value="$PROJECT_DIR$/Controllers/user/userLogin.php" />
+        <option value="$PROJECT_DIR$/Controllers/user/userLogout.php" />
+        <option value="$PROJECT_DIR$/Controllers/user/userRead.php" />
+        <option value="$PROJECT_DIR$/Controllers/user/userUpdate.php" />
+        <option value="$PROJECT_DIR$/Controllers/topic/topicCreate.php" />
+        <option value="$PROJECT_DIR$/Templates/topic/topicDelete.php" />
+        <option value="$PROJECT_DIR$/Templates/comment/commentDelete.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/Controllers/comment/commentDelete.php" />
+        <option value="$PROJECT_DIR$/Templates/topic/topicRead.php" />
+        <option value="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" />
+        <option value="$PROJECT_DIR$/Templates/comment/commentUpdate.php" />
       </list>
     </option>
   </component>
@@ -176,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,18 +218,30 @@
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="topic" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
@@ -222,6 +259,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,11 +325,12 @@
       <workItem from="1551107219578" duration="1803000" />
       <workItem from="1551118984075" duration="4741000" />
       <workItem from="1551167178118" duration="8712000" />
+      <workItem from="1551209469612" duration="5725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129199000" />
+    <option name="totallyTimeSpent" value="134924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,14 +343,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17398244" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19553073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47394136" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30130294" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
@@ -356,108 +396,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Controllers/comment/commentUpdate.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Controllers/admin/userManagement.php</url>
           <line>9</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Controllers/user/userDelete.php</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Controllers/comment/commentDelete.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/js/morris/morris.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentCreate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_schema/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userLogout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/userManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/topicManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/userManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/commentManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/commentManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="125" column="36" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/admin/topicManagement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="163" column="48" selection-start-line="163" selection-start-column="48" selection-end-line="163" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/comments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -553,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userHasPermission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Objects/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -567,24 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/layouts/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -602,24 +541,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicRead.php">
+    <entry file="file://$PROJECT_DIR$/Templates/user/userCreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
+    <entry file="file://$PROJECT_DIR$/Templates/user/userRead.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="180">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/user/userDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/user/userLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/user/userLogout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/topic/topicRead.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicShowAll.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userHasPermission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/user/userUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -637,38 +663,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userRead.php">
+    <entry file="file://$PROJECT_DIR$/Templates/user/userUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userCreate.php">
+    <entry file="file://$PROJECT_DIR$/Objects/comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userCreate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="203">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -679,41 +684,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userRead.php">
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicDelete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/topic/topicDelete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/topic/topicDelete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userDelete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/users">
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/comments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userDelete.php">
+    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentCreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="75">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentRead.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="35" column="100" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/comment/commentDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/topic/topicUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/comment/commentUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

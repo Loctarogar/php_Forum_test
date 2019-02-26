@@ -23,4 +23,6 @@ $topic = $stmtTopic->fetch();
 $stmtUser = $user->userRead($topic['user_id']);
 $user = $stmtUser->fetch();
 
+include_once '../../Templates/layouts/header.php';
 include_once '../../Templates/topic/topicRead.php';
+include_once '../../Templates/layouts/footer.php';

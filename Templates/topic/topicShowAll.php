@@ -1,4 +1,3 @@
-
 <section id="video" class="home">
     <h1>Enjoy our forum <?php echo $_SESSION['user']; ?></h1>
 </section>

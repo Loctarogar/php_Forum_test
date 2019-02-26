@@ -5,6 +5,7 @@ session_start();
 include_once '../../Objects/user.php';
 include_once '../../Core/database.php';
 
+$pageTitle = "User Update";
 if(isset($_POST['userId'])){
     $userId = $_POST['userId'];
 }

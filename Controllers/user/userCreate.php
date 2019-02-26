@@ -4,6 +4,7 @@ session_start();
 include_once '../../Objects/user.php';
 include_once '../../Core/database.php';
 
+$pageTitle = "User Create";
 $database = new Database();
 $conn = $database->getConnection();
 $user = new User($conn);
