@@ -37,6 +37,7 @@
                 <input type="hidden" value="<?php echo $comment['body'] ?>" name="body">
                 <input type="submit" value="Update comment">
             </form>
+
         <?php } ?>
     </div>
     </div>

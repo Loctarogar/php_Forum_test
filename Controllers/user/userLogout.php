@@ -16,11 +16,10 @@ if(isset($_GET['logout'])){
         $message =  "You successfully logged out";
     }
     unset($_SESSION['user']);
-    include_once 'userLogin.php';
+    unset($_SESSION['userId']);
+    unset($userId);
 }
 
-if(isset($_SESSION['user'])){
-    include_once '../../Templates/layouts/header.php';
-    include_once '../../Templates/user/userLogout.php';
-    include_once '../../Templates/layouts/footer.php';
-}
+include_once '../../Templates/layouts/header.php';
+include_once '../../Templates/user/userLogout.php';
+include_once '../../Templates/layouts/footer.php';

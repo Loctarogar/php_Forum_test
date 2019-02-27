@@ -14,7 +14,6 @@ $database = new Database();
 $conn = $database->getConnection();
 $topic = new Topic($conn);
 $stmt = $topic->topicShowAll();
-//$topics = $stmt->fetchAll();
 while($row = $stmt->fetch()){
     $counter += 1;
     $topics[$arrayCounter][] = $row;
