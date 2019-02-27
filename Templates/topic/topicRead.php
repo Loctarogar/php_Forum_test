@@ -8,8 +8,10 @@
     <div class="columns">
         <p><?php echo $topic['body']; ?></p>
         <p>Author : <a href="../../Controllers/user/userRead.php?userId=<?php echo $user['user_id']; ?>"><?php echo $user['name']; ?></a></p>
-        <p><a href="../../Controllers/topic/topicUpdate.php?topicId=<?php echo $topic['topic_id']; ?>">Update</a>  or
-        <a href="../../Controllers/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
+        <?php if(isset($_SESSION['user']) && $_SESSION['user'] == $user['name']){ ?>
+            <p><a href="../../Controllers/topic/topicUpdate.php?topicId=<?php echo $topic['topic_id']; ?>">Update</a>  or
+            <a href="../../Controllers/topic/topicDelete.php?topicId=<?php echo $topic['topic_id']; ?>">Delete topic?</a></p>
+        <?php } ?>
         <p>Comment section: </p>
         <?php if (isset($message)) {?>
         <p><?php echo $message; ?></p>

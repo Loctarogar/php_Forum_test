@@ -5,6 +5,8 @@ session_start();
 include_once '../../Core/database.php';
 include_once '../../Objects/topic.php';
 
+
+
 $topics = [];
 $counter = 0;
 $arrayCounter = 0;

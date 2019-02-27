@@ -5,7 +5,7 @@
     <div class="text-intro">
         <h2>Do you want to delete topic ?</h2>
     </div>
-    <?php if(isset($_GET['topicId'])){ ?>
+    <?php if(isset($_GET['topicId']) && isset($_SESSION['user'])){ ?>
     <div class="columns">
         <div class="img-first"><a href="../../Controllers/topic/topicDelete.php?topicId=<?php echo $_GET['topicId']; ?>&delete=yes">Yes i want to delete topic</a></div>
         <div class="img-second"><a href="../../Controllers/topic/topicShowAll.php">No, go back to main page</a></div>

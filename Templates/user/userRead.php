@@ -3,7 +3,7 @@
 </section>
 <section id="main-content">
     <div class="text-intro">
-        <?php if(false !== $user){ ?>
+        <?php if(isset($user)){ ?>
             <h2><?php echo $user['name']; ?></h2>
         <?php }else{ ?>
             <h2>There is no such user</h2>
@@ -21,6 +21,8 @@
             <p>There is no topics for this user</p>
         <?php } ?>
         <br>
-        <a href="../../Controllers/user/userDelete.php?userId=<?php echo $_SESSION['userId']; ?>"><p>Do you want delete account?</p></a>
+        <?php if(isset($_SESSION['userId'])){ ?>
+            <a href="../../Controllers/user/userDelete.php?userId=<?php echo $_SESSION['userId']; ?>"><p>Do you want delete account?</p></a>
+        <?php } ?>
     </div>
 </section>

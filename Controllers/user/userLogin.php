@@ -7,10 +7,11 @@ session_start([
 include_once '../../Core/database.php';
 include_once '../../Objects/user.php';
 
+$pageTitle = "User Login";
+
 if(isset($_POST['name']) && isset($_POST['password'])){
     $username = $_POST['name'];
     $password = $_POST['password'];
-    $pageTitle = "User Login";
 
     $database = new Database();
     $conn = $database->getConnection();
