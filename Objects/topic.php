@@ -105,6 +105,26 @@ Class Topic
         return $stmt;
     }
 
+    public function isOwner($topicId, $userId){
+        $query = "SELECT * FROM ".$this->table."
+                  WHERE topic_id = :topicId AND user_id = :userId 
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([
+            'topicId' => $topicId,
+            'userId' => $userId
+        ]);
+        $stmt = $stmt->fetch();
+        if(count($stmt) > 0){
+
+            return true;
+        }
+
+        return false;
+
+
+    }
+
     /**
      * @param mixed $name
      */

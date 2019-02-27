@@ -115,8 +115,9 @@ class User
         $stmt->execute([$role]);
         $stmt = $stmt->fetchAll();
         foreach ($stmt as $perm){
-            if($perm['perm_id'] === $permission)
+            if($perm['perm_id'] === $permission || $perm['perm_id'] === 16) {
                 return true;
+            }
         }
 
         return false;

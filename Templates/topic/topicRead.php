@@ -29,16 +29,18 @@
         <br>
         <?php foreach($comments as $comment){ ?>
             <p><?php echo $comment['body']; ?></p>
-            <form action="../../Controllers/comment/commentDelete.php" method="post">
-                <input type="hidden" value="<?php echo $comment['comment_id']; ?>" name="commentId">
-                <input type="hidden" value="<?php echo $topic['topic_id']; ?>" name="topicId">
-                <input type="submit" value="Delete comment?">
-            </form>
-            <form action="../../Controllers/comment/commentUpdate.php" method="post">
-                <input type="hidden" value="<?php echo $comment['comment_id']; ?>" name="commentId">
-                <input type="hidden" value="<?php echo $comment['body'] ?>" name="body">
-                <input type="submit" value="Update comment">
-            </form>
+            <?php if(isset($_SESSION['user'])){ ?>
+                <form action="../../Controllers/comment/commentDelete.php" method="post">
+                    <input type="hidden" value="<?php echo $comment['comment_id']; ?>" name="commentId">
+                    <input type="hidden" value="<?php echo $topic['topic_id']; ?>" name="topicId">
+                    <input type="submit" value="Delete comment?">
+                </form>
+                <form action="../../Controllers/comment/commentUpdate.php" method="post">
+                    <input type="hidden" value="<?php echo $comment['comment_id']; ?>" name="commentId">
+                    <input type="hidden" value="<?php echo $comment['body'] ?>" name="body">
+                    <input type="submit" value="Update comment">
+                </form>
+            <?php } ?>
 
         <?php } ?>
     </div>

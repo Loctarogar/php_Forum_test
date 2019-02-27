@@ -6,7 +6,7 @@ include_once '../../Core/database.php';
 include_once '../../Objects/user.php';
 
 $pageTitle = "User Logout";
-if(isset($_GET['logout'])){
+if(isset($_GET['logout']) && isset($_SESSION['userId'])){
     $userId = $_SESSION['userId'];
     $database = new Database();
     $conn = $database->getConnection();
