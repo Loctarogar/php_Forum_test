@@ -29,7 +29,7 @@ class Comment
 
     public function commentRead($comment_id){
         $query = "SELECT * FROM ".$this->table."
-                  WHERE comment_id = ?
+                  WHERE comment_id = ? and deleted_at IS NULL
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([$comment_id]);

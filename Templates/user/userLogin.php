@@ -2,6 +2,9 @@
     <h1>Ready to start? drop us a line!</h1>
 </section>
 <section id="main-content">
+    <?php if(isset($message)){ ?>
+        <h3><?php echo $message; ?></h3>
+    <?php }else{ ?>
     <div class="text-intro">
         <h2>Enter login and password</h2>
     </div>
@@ -13,4 +16,5 @@
             <input class="btn btn-input" id="sendMessage" name="sendMessage" type="submit" value="IM DONE">
         </form>
     </div>
+    <?php } ?>
 </section>

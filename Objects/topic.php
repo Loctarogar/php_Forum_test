@@ -47,7 +47,7 @@ Class Topic
 
     public function topicGetComments($topicId){
         $query = "SELECT * FROM comments
-                  WHERE topic_id = ?
+                  WHERE topic_id = ? and deleted_at IS NULL
         ";
         $stmt = $this->db->prepare($query);
         $stmt->execute([$topicId]);

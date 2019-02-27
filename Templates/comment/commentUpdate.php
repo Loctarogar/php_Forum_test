@@ -13,7 +13,7 @@
                 <h3>Update Comment</h3>
                 <form method="post" action="../../Controllers/comment/commentUpdate.php">
                     Enter comment : <br>
-                    <input type="text" name="body" value="<?php echo $comment['body'];?>" style="height: 200px; width: 300px"> <br>
+                    <input type="text" name="body" value="<?php echo $commentBody;?>" style="height: 200px; width: 300px"> <br>
                     <input type="hidden" name="commentId" value="<?php echo $commentId; ?>">
                     <input type="hidden" name="update" value="update">
                     <input type="submit">
