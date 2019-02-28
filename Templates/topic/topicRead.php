@@ -2,6 +2,7 @@
     <h1>We built identity for local and international clients.</h1>
 </section>
 <section id="main-content">
+    <?php if(!isset($message)){ ?>
     <div class="text-intro">
         <h2><?php echo $topic['name']; ?></h2>
     </div>
@@ -45,4 +46,7 @@
         <?php } ?>
     </div>
     </div>
+    <?php }else{ ?>
+        <?php echo $message; ?>
+    <?php } ?>
 </section>
