@@ -5,7 +5,7 @@
     <div class="text-intro">
         <h2>Do you want to delete comment ?</h2>
     </div>
-    <?php if($commentId){ ?>
+    <?php if(isset($commentId)){ ?>
         <div class="columns">
             <div class="img-first">
                 <a href="../../Controllers/comment/commentDelete.php?commentId=<?php echo $commentId; ?>&delete=yes">

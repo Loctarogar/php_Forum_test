@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c15f5-dcbe-43e1-9015-83f3bf2a0369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/comment/commentCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/comment/commentCreate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/topic/topicRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/topic/topicRead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/comment/commentDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/comment/commentDelete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/comment/commentDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/comment/commentDelete.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,35 +42,70 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/comment/commentCreate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/permissions">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Controllers/comment/commentDelete.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="532">
+                  <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Controllers/comment/commentCreate.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Templates/comment/commentDelete.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/comments">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/permissions">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Templates/comment/commentDelete.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -111,8 +145,6 @@
         <option value="$PROJECT_DIR$/Controllers/user/userDelete.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userRead.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userUpdate.php" />
-        <option value="$PROJECT_DIR$/Templates/comment/commentDelete.php" />
-        <option value="$PROJECT_DIR$/Controllers/comment/commentDelete.php" />
         <option value="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" />
         <option value="$PROJECT_DIR$/Templates/user/userLogin.php" />
         <option value="$PROJECT_DIR$/Objects/comment.php" />
@@ -135,6 +167,8 @@
         <option value="$PROJECT_DIR$/Templates/topic/topicRead.php" />
         <option value="$PROJECT_DIR$/Controllers/topic/topicRead.php" />
         <option value="$PROJECT_DIR$/Controllers/comment/commentCreate.php" />
+        <option value="$PROJECT_DIR$/Templates/comment/commentDelete.php" />
+        <option value="$PROJECT_DIR$/Controllers/comment/commentDelete.php" />
       </list>
     </option>
   </component>
@@ -186,6 +220,12 @@
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
@@ -270,12 +310,12 @@
       <workItem from="1551282242575" duration="662000" />
       <workItem from="1551294682385" duration="6157000" />
       <workItem from="1551368574904" duration="1692000" />
-      <workItem from="1551376770471" duration="2318000" />
+      <workItem from="1551376770471" duration="4627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157719000" />
+    <option name="totallyTimeSpent" value="160028000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +330,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1660016" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1660016" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -332,11 +372,6 @@
           <url>file://$PROJECT_DIR$/Templates/topic/topicDelete.php</url>
           <line>7</line>
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Controllers/comment/commentCreate.php</url>
-          <line>5</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -442,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/comments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Objects/comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -491,20 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentDelete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/comment/commentDelete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -657,7 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/permissions">
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/comments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -666,15 +680,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/topic/topicCreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="405">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/comment/commentCreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92fcb1a6-d4a7-4f0a-81d4-33f22c4e8d37/schema/test/table/permissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/comment/commentDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/comment/commentDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
