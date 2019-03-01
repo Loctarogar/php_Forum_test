@@ -16,4 +16,6 @@ $topic = new Topic($conn);
 $stmt = $topic->topicShowAll();
 $topics = $stmt->fetchAll();
 
+include_once '../../Templates/admin/layouts/header.php';
 include_once '../../Templates/admin/topicManagement.php';
+include_once '../../Templates/admin/layouts/footer.php';

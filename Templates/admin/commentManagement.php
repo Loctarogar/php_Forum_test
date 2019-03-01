@@ -1,29 +1,8 @@
 <?php if(!isset($_SESSION['user'])){ ?>
     <p>The page doesn't exist</p>
-<?php }else{ ?>
+<?php }else ?>
 
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin: User Management</title>
-        <!-- BOOTSTRAP STYLES-->
-        <link href="../../public/assets/css/bootstrap.css" rel="stylesheet" />
-        <!-- FONTAWESOME STYLES-->
-        <link href="../../public/assets/css/font-awesome.css" rel="stylesheet" />
-        <!-- MORRIS CHART STYLES-->
-
-        <!-- CUSTOM STYLES-->
-        <link href="../../public/assets/css/custom.css" rel="stylesheet" />
-        <!-- GOOGLE FONTS-->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-        <!-- TABLE STYLES-->
-        <link href="../../public/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
-    </head>
-
-
-
+<!-- admin/layouts/header -->
     <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
@@ -177,24 +156,3 @@ font-size: 16px;"> Last access : <?php echo $currentUser['last_access']; ?> &nbs
     <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="../../public/assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="../../public/assets/js/bootstrap.min.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="../../public/assets/js/jquery.metisMenu.js"></script>
-    <!-- DATA TABLE SCRIPTS -->
-    <script src="../../public/assets/js/dataTables/jquery.dataTables.js"></script>
-    <script src="../../public/assets/js/dataTables/dataTables.bootstrap.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#dataTables-example').dataTable();
-        });
-    </script>
-    <!-- CUSTOM SCRIPTS -->
-    <script src="../../public/assets/js/custom.js"></script>
-
-
-    </body>
-    </html>
-
-<?php } ?>

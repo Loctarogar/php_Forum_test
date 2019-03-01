@@ -14,7 +14,6 @@ $user = new User($conn);
 $stmt = $user->userRead($userId);
 $userPermission = $user->userHasPermission($userId, 4);
 $user = $stmt->fetch();
-
 $topic = new Topic($conn);
 $stmt = $topic->topicAllForUser($userId);
 $topics = $stmt->fetchAll();
@@ -22,4 +21,6 @@ $comment = new Comment($conn);
 $stmt = $comment->commentAllForUser($userId);
 $comments = $stmt->fetchAll();
 
+include_once '../../Templates/admin/layouts/header.php';
 include_once '../../Templates/admin/dashboard.php';
+include_once '../../Templates/admin/layouts/footer.php';

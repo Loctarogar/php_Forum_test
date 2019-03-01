@@ -16,4 +16,6 @@ $comment = new Comment($conn);
 $commentStmt = $comment->commentShowALl();
 $comments = $commentStmt->fetchAll();
 
+include_once '../../Templates/admin/layouts/header.php';
 include_once '../../Templates/admin/commentManagement.php';
+include_once '../../Templates/admin/layouts/footer.php';
