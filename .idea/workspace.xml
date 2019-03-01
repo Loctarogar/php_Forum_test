@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/Controllers/admin/userManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/admin/userManagement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/admin/commentManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/commentManagement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/admin/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/layouts/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/admin/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/layouts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/admin/topicManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/topicManagement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/admin/userManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/admin/userManagement.php" afterDir="false" />
@@ -54,11 +53,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/footer.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Controllers/admin/commentManagement.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Templates/admin/commentManagement.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="428">
+                  <caret line="78" selection-start-line="78" selection-end-line="78" selection-end-column="65" />
                 </state>
               </provider>
             </entry>
@@ -68,10 +76,19 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/footer.php">
+            <entry file="file://$PROJECT_DIR$/Templates/admin/topicManagement.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+                <state relative-caret-position="458">
+                  <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Controllers/admin/topicManagement.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -83,6 +100,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>last</find>
+      <find>user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,11 +109,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Objects/privilegeduser.php" />
-        <option value="$PROJECT_DIR$/Objects/role.php" />
         <option value="$PROJECT_DIR$/Objects/permission.php" />
         <option value="$PROJECT_DIR$/Controllers/admin/showAllRoles.php" />
-        <option value="$PROJECT_DIR$/Controllers/admin/showAllPermissions.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userHasRole.php" />
         <option value="$PROJECT_DIR$/Controllers/user/userHasPermission.php" />
         <option value="$PROJECT_DIR$/Templates/layouts/footer.php" />
@@ -132,16 +147,19 @@
         <option value="$PROJECT_DIR$/Controllers/comment/commentDelete.php" />
         <option value="$PROJECT_DIR$/Controllers/comment/commentUpdate.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/Controllers/admin/commentManagement.php" />
-        <option value="$PROJECT_DIR$/Controllers/admin/topicManagement.php" />
-        <option value="$PROJECT_DIR$/Controllers/admin/userManagement.php" />
-        <option value="$PROJECT_DIR$/Controllers/admin/dashboard.php" />
-        <option value="$PROJECT_DIR$/Templates/admin/layouts/header.php" />
-        <option value="$PROJECT_DIR$/Templates/admin/dashboard.php" />
-        <option value="$PROJECT_DIR$/Templates/admin/topicManagement.php" />
-        <option value="$PROJECT_DIR$/Templates/admin/commentManagement.php" />
-        <option value="$PROJECT_DIR$/Templates/admin/userManagement.php" />
         <option value="$PROJECT_DIR$/Templates/admin/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/layouts/header.php" />
+        <option value="$PROJECT_DIR$/Controllers/admin/showAllPermissions.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/layouts/navTop.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/layouts/navSide.php" />
+        <option value="$PROJECT_DIR$/Controllers/admin/dashboard.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/dashboard.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/commentManagement.php" />
+        <option value="$PROJECT_DIR$/Controllers/admin/commentManagement.php" />
+        <option value="$PROJECT_DIR$/Controllers/admin/userManagement.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/userManagement.php" />
+        <option value="$PROJECT_DIR$/Controllers/admin/topicManagement.php" />
+        <option value="$PROJECT_DIR$/Templates/admin/topicManagement.php" />
       </list>
     </option>
   </component>
@@ -164,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,12 +199,6 @@
               <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php_Forum_test" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="topic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_Forum_test" type="b2602c69:ProjectViewProjectNode" />
@@ -211,6 +222,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,12 +296,13 @@
       <workItem from="1551294682385" duration="6157000" />
       <workItem from="1551368574904" duration="1692000" />
       <workItem from="1551376770471" duration="7319000" />
-      <workItem from="1551429137362" duration="1726000" />
+      <workItem from="1551429137362" duration="5149000" />
+      <workItem from="1551467870511" duration="2921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164446000" />
+    <option name="totallyTimeSpent" value="170790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +317,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1660016" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20430966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,7 +331,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19318181" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20032573" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -346,20 +359,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Controllers/user/userUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/user/userUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/comment/commentRead.php" />
     <entry file="file://$PROJECT_DIR$/Templates/user/userLogin.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -611,80 +610,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/header.php">
+    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/commentManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/admin/showAllPermissions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="75">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/topicManagement.php">
+    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/navTop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="165">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/admin/userManagement.php">
+    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/navSide.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/topicManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/commentManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1807">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/userManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1815">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/admin/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="442">
+          <caret line="95" selection-start-line="95" selection-end-line="95" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/admin/layouts/footer.php">
+    <entry file="file://$PROJECT_DIR$/Controllers/admin/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/admin/userManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/admin/userManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/admin/topicManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/admin/commentManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/admin/commentManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="78" selection-start-line="78" selection-end-line="78" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/admin/topicManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
         </state>
       </provider>
     </entry>

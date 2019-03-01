@@ -7,6 +7,9 @@ include_once '../../Objects/user.php';
 include_once '../../Objects/topic.php';
 include_once '../../Objects/comment.php';
 
+$pageTitle = "Admin: Dashboard";
+$activeMenu = "dashboard";
+
 $userId = $_SESSION['userId'];
 $database = new Database();
 $conn = $database->getConnection();
@@ -21,6 +24,4 @@ $comment = new Comment($conn);
 $stmt = $comment->commentAllForUser($userId);
 $comments = $stmt->fetchAll();
 
-include_once '../../Templates/admin/layouts/header.php';
 include_once '../../Templates/admin/dashboard.php';
-include_once '../../Templates/admin/layouts/footer.php';
