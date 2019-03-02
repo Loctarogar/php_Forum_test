@@ -1,5 +1,5 @@
-<?php if(!isset($_SESSION['user'])){ ?>
-    <p>The page doesn't exist</p>
+<?php if(false === $userPermission){ ?>
+    <p><?php echo $message; ?></p>
 <?php }else{ ?>
 
 <!-- admin/layouts/header -->

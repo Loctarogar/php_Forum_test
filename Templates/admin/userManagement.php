@@ -1,5 +1,5 @@
-<?php if(!isset($_SESSION['user'])){ ?>
-    <p>The page doesn't exist</p>
+<?php if(false === $userPermission){ ?>
+    <p><?php echo $message; ?></p>
 <?php }else{ ?>
 
 <!-- admin/layouts/header -->
@@ -51,8 +51,8 @@
                                     <?php $i = 1; foreach ($users as $userItem){ ?>
                                         <tr class="odd gradeX">
                                             <td><?php echo $i; $i ++; ?></td>
-                                            <td><?php echo $userItem['user_id']; ?></td>
-                                            <td><?php echo $userItem['name'] ?></td>
+                                            <td><a href="../../Controllers/admin/userManagementSingle.php?userId=<?php echo $userItem['user_id']?>"><?php echo $userItem['user_id']; ?></a></td>
+                                            <td><a href="../../Controllers/admin/userManagementSingle.php?userId=<?php echo $userItem['user_id']?>"><?php echo $userItem['name'] ?></a></td>
                                             <td class="center"><?php echo $userItem['last_access']; ?></td>
                                             <td><?php echo $userItem['deleted_at']; ?></td>
                                         </tr>

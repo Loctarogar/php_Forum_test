@@ -1,5 +1,5 @@
-<?php if(false == $userPermission){ ?>
-    <p>The page doesn't exists</p>
+<?php if(false === $userPermission){ ?>
+    <p><?php echo $message; ?></p>
 <?php }else{ ?>
 
 <?php include_once '../../Templates/admin/layouts/header.php'; ?>
