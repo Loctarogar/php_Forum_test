@@ -21,13 +21,20 @@ if(!isset($_SESSION['user']) || !isset($_GET['userId'])){
     $database = new Database();
     $conn = $database->getConnection();
     $user = new User($conn);
+    //admin
     $stmtUser = $user->userRead($userId);
+    //users information
     $stmtUserSingleId = $user->userRead($userSingleId);
+    $userSinglePermissions = $user->userAllPermissions($userSingleId);
+    $userSingleRole = $user->userHasRole($userSingleId);
     $userSingle = $stmtUserSingleId->fetch();
+    //admin
     $user = $stmtUser->fetch();
+    //users topics
     $topic = new Topic($conn);
     $stmtTopic = $topic->topicAllForUser($userSingleId);
     $topics = $stmtTopic->fetchAll();
+    //users comments
     $comment = new Comment($conn);
     $stmtComment = $comment->commentAllForUser($userSingleId);
     $comments = $stmtComment->fetchAll();

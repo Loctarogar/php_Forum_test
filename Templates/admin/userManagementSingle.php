@@ -41,6 +41,8 @@
                                     <tr>
                                         <th>UserId</th>
                                         <th>User Name</th>
+                                        <th>User Role</th>
+                                        <th>User Permissions</th>
                                         <th>Last Access</th>
                                         <th>Deleted At</th>
                                     </tr>
@@ -49,6 +51,8 @@
                                         <tr class="odd gradeX">
                                             <td><?php echo $userSingle['user_id']; ?></td>
                                             <td><?php echo $userSingle['name']; ?></td>
+                                            <td><?php echo $userSingleRole; ?></td>
+                                            <td><?php foreach ($userSinglePermissions as $perm){ echo $perm['perm_name']." , "; }; ?></td>
                                             <td><?php echo $userSingle['last_access']; ?></td>
                                             <td><?php echo $userSingle['deleted_at']; ?></td>
                                         </tr>
