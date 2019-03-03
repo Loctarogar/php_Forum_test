@@ -101,7 +101,7 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Topics
+                            Comments
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
