@@ -19,7 +19,13 @@ if(!isset($_SESSION['user'])){
     $user = new User($conn);
     $stmtUser = $user->userRead($userId);
     $stmt = $user->userShowAll();
-    $users = $stmt->fetchAll();
+    $usersAll = $stmt->fetchAll();
+    $users = [];
+    foreach ($usersAll as $value){
+        $value['permissions'] = $user->userAllPermissions($value['user_id']);
+        $value['role'] = $user->userHasRole($value['user_id']);
+        $users[] = $value;
+    }
     $userPermission = $user->userHasPermission($userId, 4);
     $user = $stmtUser->fetch();
 }

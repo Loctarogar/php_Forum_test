@@ -43,6 +43,8 @@
                                         <th>N#</th>
                                         <th>User Id</th>
                                         <th>User Name</th>
+                                        <th>User Role</th>
+                                        <th>User Permissions</th>
                                         <th>Last Access</th>
                                         <th>Deleted At</th>
                                     </tr>
@@ -53,6 +55,8 @@
                                             <td><?php echo $i; $i ++; ?></td>
                                             <td><a href="../../Controllers/admin/userManagementSingle.php?userId=<?php echo $userItem['user_id']?>"><?php echo $userItem['user_id']; ?></a></td>
                                             <td><a href="../../Controllers/admin/userManagementSingle.php?userId=<?php echo $userItem['user_id']?>"><?php echo $userItem['name'] ?></a></td>
+                                            <td><?php echo $userItem['role']; ?></td>
+                                            <td><?php foreach ($userItem['permissions'] as $perm){ echo $perm['perm_name']." , "; } ; ?></td>
                                             <td class="center"><?php echo $userItem['last_access']; ?></td>
                                             <td><?php echo $userItem['deleted_at']; ?></td>
                                         </tr>
@@ -77,3 +81,4 @@
 <?php include_once '../../Templates/admin/layouts/footer.php'; ?>
 <!-- JQUERY SCRIPTS -->
 <?php } ?>
+

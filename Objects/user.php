@@ -123,6 +123,23 @@ class User
         return false;
     }
 
+    public function userAllPermissions($userId){
+        $role = $this->userHasRole($userId);
+        $query = "SELECT permissions.perm_name
+                  FROM permissions
+                  LEFT JOIN role_perm
+                  ON permissions.perm_id = role_perm.perm_id
+                  WHERE role_perm.role_id = ?
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$role]);
+        $permissions = $stmt->fetchAll();
+
+        return $permissions;
+    }
+
+
+
     /**
      * @param mixed $name
      */
