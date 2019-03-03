@@ -36,7 +36,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                     <tr>
                                         <th>UserId</th>
@@ -51,7 +51,7 @@
                                         <tr class="odd gradeX">
                                             <td><?php echo $userSingle['user_id']; ?></td>
                                             <td><?php echo $userSingle['name']; ?></td>
-                                            <td><?php echo $userSingleRole; ?></td>
+                                            <td><?php echo $userRole['role_name']; ?></td>
                                             <td><?php foreach ($userSinglePermissions as $perm){ echo $perm['perm_name']." , "; }; ?></td>
                                             <td><?php echo $userSingle['last_access']; ?></td>
                                             <td><?php echo $userSingle['deleted_at']; ?></td>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" >
                                     <thead>
                                     <tr>
                                         <th>Topic Id</th>
@@ -103,13 +103,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
+                    <?php if(!empty($comments)){ ?>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Comments
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                     <tr>
                                         <th>Comment Id</th>
@@ -130,7 +131,24 @@
 
                         </div>
                     </div>
+                    <?php } ?>
                     <!--End Advanced Tables -->
+
+                    <!-- Radiobutton -->
+                    <div class="form-group">
+                        <label>Here you can change user's role</label>
+
+                        <form action="../../Controllers/admin/userManagementSingle.php">
+                            <?php foreach ($roles as $role){ ?>
+                                <input type="radio" name="role" value="<?php echo $role['role_id']; ?>"
+                                    <?php if($userSingleRole == $role['role_id']){ echo "checked"; }; ?> />
+                                <?php echo $role['role_name']; ?><br>
+                            <?php } ?>
+                            <input type="hidden" name="userId" value="<?php echo $userSingleId ?>">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <!-- End Radiobutton -->
                 </div>
             </div>
         </div>
