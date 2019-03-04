@@ -22,26 +22,28 @@ if(!isset($_SESSION['user']) || !isset($_GET['userId'])){
     $database = new Database();
     $conn = $database->getConnection();
     $user = new User($conn);
-    //admin
+    //admin read
     $stmtUser = $user->userRead($userId);
     //users information
     $stmtUserSingleId = $user->userRead($userSingleId);
     $userSinglePermissions = $user->userAllPermissions($userSingleId);
     $userSingleRole = $user->userHasRole($userSingleId);
     $userSingle = $stmtUserSingleId->fetch();
-    //admin
+    //admin fetch
     $user = $stmtUser->fetch();
-    //users topics
+    //user's topics
     $topic = new Topic($conn);
     $stmtTopic = $topic->topicAllForUser($userSingleId);
     $topics = $stmtTopic->fetchAll();
-    //users comments
+    //user's comments
     $comment = new Comment($conn);
     $stmtComment = $comment->commentAllForUser($userSingleId);
     $comments = $stmtComment->fetchAll();
-    //roles
+    //role
     $role = new Role($conn);
+    //admin's role
     $userRole = $role->readRole($userSingleRole);
+    // all roles
     $roles = $role->showAllRoles();
     $roles = $roles->fetchAll();
     if(isset($_GET['role'])){

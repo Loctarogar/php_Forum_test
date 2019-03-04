@@ -65,6 +65,7 @@
                     <!--End Advanced Tables -->
                 </div>
             </div>
+            <?php if(!empty($topics)){ ?>
             <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
@@ -100,6 +101,8 @@
                     <!--End Advanced Tables -->
                 </div>
             </div>
+            <?php } ?>
+            <?php if(!empty($comments)){ ?>
             <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
@@ -133,24 +136,23 @@
                     </div>
                     <?php } ?>
                     <!--End Advanced Tables -->
-
-                    <!-- Radiobutton -->
-                    <div class="form-group">
-                        <label>Here you can change user's role</label>
-
-                        <form action="../../Controllers/admin/userManagementSingle.php">
-                            <?php foreach ($roles as $role){ ?>
-                                <input type="radio" name="role" value="<?php echo $role['role_id']; ?>"
-                                    <?php if($userSingleRole == $role['role_id']){ echo "checked"; }; ?> />
-                                <?php echo $role['role_name']; ?><br>
-                            <?php } ?>
-                            <input type="hidden" name="userId" value="<?php echo $userSingleId ?>">
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                    <!-- End Radiobutton -->
                 </div>
             </div>
+            <?php } ?>
+            <!-- Radiobutton -->
+            <div class="form-group">
+                <label>Here you can change user's role</label>
+                <form action="../../Controllers/admin/userManagementSingle.php" method="get">
+                    <?php foreach ($roles as $role){ ?>
+                        <input type="radio" name="role" value="<?php echo $role['role_id']; ?>"
+                            <?php if($userSingleRole == $role['role_id']){ echo "checked"; }; ?> />
+                        <?php echo $role['role_name']; ?><br>
+                    <?php } ?>
+                    <input type="hidden" name="userId" value="<?php echo $userSingleId ?>">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <!-- End Radiobutton -->
         </div>
     </div>
     <!-- /. PAGE INNER  -->

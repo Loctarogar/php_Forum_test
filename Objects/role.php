@@ -31,14 +31,36 @@ class Role
         return $stmt;
     }
 
-    public function roleForUserUpdate($user_id, $role_id){
-        $query = "UPDATE ".$this->tableUserRole."
-                  SET role_id = ?
+    public function roleUsersRole($user_id){
+        $query = "SELECT * FROM user_role
                   WHERE user_id = ?
         ";
         $stmt = $this->db->prepare($query);
+        $stmt->execute([$user_id]);
+        $role = $stmt->fetch();
+        if(!empty($role)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function roleForUserUpdate($user_id, $role_id){
+        $roleIsExists = $this->roleUsersRole($user_id);
+        if($roleIsExists === true){
+            $query = "UPDATE ".$this->tableUserRole."
+                      SET role_id = :roleId
+                      WHERE user_id = :userId
+            ";
+        }else{
+            $query = "INSERT INTO user_role
+                      VALUES (:userId, :roleId)
+            ";
+        }
+        $stmt = $this->db->prepare($query);
         $stmt->execute([
-            $user_id, $role_id
+            'userId' => $user_id,
+            'roleId' => $role_id
         ]);
         $stmt = $stmt->rowCount();
         if($stmt > 0){
